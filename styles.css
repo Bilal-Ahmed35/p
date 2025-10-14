@@ -1,4 +1,23 @@
-#home{
-    background-color: blue;
-    color: tomato;
-}
+button {
+      background: #001d3d;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    /* Animation keyframes */
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      30%  { transform: translateY(-10px); }
+      50%  { transform: translateY(0); }
+      70%  { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    .bounce {
+      animation: bounce 0.4s;
+    }
