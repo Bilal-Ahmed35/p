@@ -3,17 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Checker & Multiplication Table</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>New App</title>
   </head>
   <body>
-    <h1 id="home">Home</h1>
-    <button id="btn1">click me!</button>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a
-      deserunt inventore atque, unde eligendi dolor sapiente eius blanditiis,
-      qui nostrum hic officia ducimus odio ea mollitia aperiam facere debitis.
-    </p>
+    <div class="container">
+      <h2>Number Checker</h2>
+      <input type="number" id="numberInput" placeholder="Enter a number" />
+      <button id="checkBtn">Check Number</button>
+      <div id="checkResult" class="result"></div>
+
+      <h2>Multiplication Table Generator</h2>
+      <input
+        type="number"
+        id="tableInput"
+        placeholder="Enter a number for table"
+      />
+      <button id="tableBtn">Generate Table</button>
+      <div id="tableResult" class="result"></div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

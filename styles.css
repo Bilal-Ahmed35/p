@@ -1,23 +1,155 @@
+/* Fade-in effect for whole page */
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: linear-gradient(135deg, #001d3d, #003566);
+  color: white;
+  animation: fadeIn 1s ease-in;
+}
+
+.container {
+  background: white;
+  color: #001d3d;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.8s ease-out;
+}
+
+h2 {
+  text-align: center;
+  color: #001d3d;
+}
+
+input,
 button {
-      background: #001d3d;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 16px;
+}
 
-    /* Animation keyframes */
-    @keyframes bounce {
-      0%   { transform: translateY(0); }
-      30%  { transform: translateY(-10px); }
-      50%  { transform: translateY(0); }
-      70%  { transform: translateY(-6px); }
-      100% { transform: translateY(0); }
-    }
+button {
+  background: #001d3d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .bounce {
-      animation: bounce 0.4s;
-    }
+/* Hover glow animation */
+button:hover {
+  box-shadow: 0 0 15px #ffc300;
+  transform: scale(1.05);
+}
+
+/* Active bounce */
+button:active {
+  animation: bounce 0.4s;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f3f5;
+  border-radius: 4px;
+  color: #001d3d;
+  animation: fadeText 0.8s ease-in-out;
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional rotating effect */
+.rotate {
+  animation: rotate 0.6s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animated glow border */
+.container:hover {
+  box-shadow: 0 0 25px #ffc300;
+  transition: 0.5s;
+}
+
+/* Optional pulse animation for buttons */
+.pulse {
+  animation: pulse 1s infinite;
+}
