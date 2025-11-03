@@ -2,7 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   padding: 30px;
-  background: linear-gradient(135deg, #001d3d, #003566);
+  background: linear-gradient(135deg, #639ad4, #003566);
   color: white;
   animation: fadeIn 1s ease-in;
 }
