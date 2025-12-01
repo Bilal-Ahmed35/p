@@ -126,11 +126,37 @@ btn.addEventListener("mouseleave", () => {
 // });
 // console.log(inTitleCase);
 
-const fruits = ["apple", "banana", "mango"];
+// const fruits = ["apple", "banana", "mango"];
 
-const titleCaseFruits = fruits.map((fruit) => {
-  const [firstLetter, ...rest] = fruit;
-  return firstLetter.toUpperCase() + rest.join("");
-});
+// const titleCaseFruits = fruits.map((fruit) => {
+//   const [firstLetter, ...rest] = fruit;
+//   return firstLetter.toUpperCase() + rest.join("");
+// });
 
-console.log(titleCaseFruits);
+// console.log(titleCaseFruits);
+
+// async function fetchData() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await response.json();
+//     console.log("Data fetched successfully", data);
+//   } catch (error) {
+//     console.log("Error fetching data:", error);
+//   }
+// }
+// fetchData();
+
+// const order = { total: 100, customer: "Ali" };
+// const discountedTotal =
+//   order.total > 1000 ? order.total * 0.9 : `${order.total + "no discount"}`;
+// console.log(discountedTotal);
+
+const order = { total: 1200, customer: "Ali" };
+const discountPercent = 10;
+
+const finalPrice =
+  order.total > 1000 ? order.total * (1 - discountPercent / 100) : order.total;
+
+console.log(
+  `Actual price was Rs ${order.total}, discount was ${discountPercent}%, and final price is Rs ${finalPrice}.`
+);
