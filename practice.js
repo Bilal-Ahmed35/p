@@ -1,34 +1,34 @@
-// function add(a, b) {
-//   return a + b;
-// }
-// console.log(`Adding 2+3 = ${add(2, 3)}`);
+function add(a, b) {
+  return a + b;
+}
+console.log(`Adding 2+3 = ${add(2, 3)}`);
 
-// const sub = (a, b) => a - b;
-// console.log(`Subtracting 5-2 = ${sub(5, 2)}`);
+const sub = (a, b) => a - b;
+console.log(`Subtracting 5-2 = ${sub(5, 2)}`);
 
-// const student = {
-//   name: "Alice",
-//   age: 20,
-//   greet: () => {
-//     console.log(`Hello, my name is ${this.name}`);
-//   },
-// };
-// student.greet();
+const student = {
+  name: "Alice",
+  age: 20,
+  greet: () => {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+student.greet();
 
-// const std = {
-//   name: "Bilal",
-//   age: 20,
-//   greet: function () {
-//     console.log(`Hello, my name is ${this.name}`);
-//   },
-// };
-// std.greet();
+const std = {
+  name: "Bilal",
+  age: 20,
+  greet: function () {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+std.greet();
 
-// const btn = document.querySelector("#plus");
+const btn = document.querySelector("#plus");
 
-// btn.addEventListener("mouseleave", () => {
-//   btn.textContent = "Clicked!";
-// });
+btn.addEventListener("mouseleave", () => {
+  btn.textContent = "Clicked!";
+});
 
 // function increment() {
 //   const [count, setCount] = useState(0);
