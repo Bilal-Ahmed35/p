@@ -3,3 +3,17 @@ h1{
     border: solid black 2px ;
     border-radius:  10px;
 }
+#container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical center */
+  height: 300px; /* container height */
+  gap: 20px;
+}
+.d1{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: solid black 2px ;
+    border-radius:  10px;
+}
